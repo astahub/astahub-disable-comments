@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Astahub - Disable Comments
-Plugin URI: 
+Plugin URI: https://github.com/astahub/astahub-disable-comments
 Description: Disable build in comment system on backend and frontend.
 Author: harisrozak
-Author URI: 
+Author URI: https://github.com/harisrozak
 Version: 0.1
 Text Domain: astahub-disable-comments
 License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
