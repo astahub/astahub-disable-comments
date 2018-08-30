@@ -58,9 +58,8 @@ function astahub_disable_comments_dashboard() {
 add_action('admin_init', 'astahub_disable_comments_dashboard');
 
 // Remove comments links from admin bar
-function astahub_disable_comments_admin_bar() {
-	if (is_admin_bar_showing()) {
-		remove_action('admin_bar_menu', 'wp_admin_bar_comments_menu', 60);
-	}
+function astahub_remove_admin_bar__comments(){
+        global $wp_admin_bar;
+        $wp_admin_bar->remove_menu('comments');
 }
-add_action('init', 'astahub_disable_comments_admin_bar');
+add_action( 'wp_before_admin_bar_render', 'astahub_remove_admin_bar__comments' );
